@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/SwarmNavigationBarColor"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvIntroducirNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/altura_inicio_sesion"
+            android:background="@color/fondo_resaltado"
+            android:padding="@dimen/padding_inicio_sesion"
+            android:textSize="@dimen/provisional_tamaño_texto_40"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Correo electrónico o Usuario" />
+
+        <TextView
+            android:id="@+id/tvIntroducirNombre2"
+            android:layout_width="@dimen/provisional_ancho_contraseña"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="460dp"
+            android:background="@color/fondo_resaltado"
+            android:padding="@dimen/padding_inicio_sesion"
+            android:textAlignment="center"
+            android:textSize="@dimen/provisional_tamaño_texto_40"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Contraseña" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/provisional_marginTop_botonInicioSesion"
+            android:background="@android:color/holo_orange_dark"
+            android:padding="@dimen/padding_boton_go"
+            android:textSize="@dimen/provisional_tamaño_texto_40"
+            app:layout_constraintStart_toStartOf="@+id/tvIntroducirNombre2"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroducirNombre2"
+            tools:text="GO!" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/provisional_marginTop_botonInicioSesion"
+            android:background="#ffffff"
+            android:padding="@dimen/padding_boton_go"
+            android:text="@string/texto_boton_registrarse"
+            android:textSize="@dimen/provisional_tamaño_texto_40"
+            app:layout_constraintEnd_toEndOf="@+id/tvIntroducirNombre2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroducirNombre2" />
+
+        <TextView
+            android:id="@+id/tvDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/inicioSesion_texto_datos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="SwarmApp, 2018-2019. Para cualquier duda contactar con el servicio técnico. Menos en vacaciones." />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="@dimen/marginH_listView_inicio_sesion"
+            android:layout_marginTop="@dimen/margenV_listView_inicio_sesion"
+            android:background="@color/fondo_resaltado_2"
+            app:layout_constraintBottom_toTopOf="@+id/tvDatos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2">
+
+            <ListView
+                android:id="@+id/lv_inicio_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

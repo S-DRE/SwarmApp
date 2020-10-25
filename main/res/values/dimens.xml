@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="altura_inicio_sesion">300dp</dimen>
+    <dimen name="provisional_tamaño_texto">25sp</dimen>
+    <dimen name="provisional_tamaño_texto_40">40sp</dimen>
+    <dimen name="padding_inicio_sesion">10dp</dimen>
+    <dimen name="provisional_ancho_contraseña">520dp</dimen>
+    <dimen name="provisional_ancho_botonInicioSesion">150dp</dimen>
+    <dimen name="provisional_marginTop_botonInicioSesion">30dp</dimen>
+    <dimen name="padding_boton_go">10dp</dimen>
+    <dimen name="margin_boton_registrarse">10dp</dimen>
+    <dimen name="inicioSesion_texto_datos">28sp</dimen>
+    <dimen name="marginH_listView_inicio_sesion">60dp</dimen>
+    <dimen name="margenV_listView_inicio_sesion">60dp</dimen>
+    <dimen name="margen_titular_noticia">30dp</dimen>
+    <dimen name="tamañoTexto_titular">16sp</dimen>
+    <dimen name="margen_preview_noticia">30dp</dimen>
+    <dimen name="margenTop_preview_noticia">15dp</dimen>
+</resources>

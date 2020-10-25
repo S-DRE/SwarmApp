@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_noticias_raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tvInicioSesionColorFondo">
+
+    <RelativeLayout
+        android:id="@+id/rl_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lvInicioSesionColor">
+
+        <ImageView
+            android:id="@+id/ivFotoNoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/news_logo" />
+
+        <TextView
+            android:id="@+id/tvTitularNoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/margen_titular_noticia"
+            android:layout_toRightOf="@id/ivFotoNoticia"
+            android:textSize="@dimen/tamañoTexto_titular"
+            android:textStyle="bold"
+            tools:text="TITULAR" />
+
+        <TextView
+            android:id="@+id/tvPreviewNoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitularNoticia"
+            android:layout_marginLeft="@dimen/margen_preview_noticia"
+            android:layout_marginTop="@dimen/margenTop_preview_noticia"
+            android:layout_toRightOf="@id/ivFotoNoticia"
+            tools:text="Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo." />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
